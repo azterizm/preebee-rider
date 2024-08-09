@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    @apply bg-white text-black;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: GeneralSans-Variable;
+    font-weight: 500;
+    scroll-behavior: smooth;
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"] {
+    -webkit-appearance: none !important;
+    margin: 0;
+    -moz-appearance: textfield !important;
+  }
+
+  p {
+    @apply leading-relaxed tracking-wide;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    background-color: hsla(55, 100%, 98%, 1);
+  }
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    background-color: hsla(55, 100%, 98%, 1);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+    background-color: hsla(54, 100%, 20%, 1);
+  }
+}
